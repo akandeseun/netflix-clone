@@ -1,0 +1,346 @@
+/* Author : Akande Oluwaseun */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.l-heading {
+  font-size: 50px;
+  margin: 0 auto;
+  line-height: 1.1;
+  text-align: center;
+  max-width: 640px;
+
+}
+
+.m-heading {
+  font-size: 26px;
+  margin: 1rem auto;
+  font-weight: 400;
+}
+
+.lead {
+  font-size: 19.2px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  /* max-width: 450px; */
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Dark Background */
+.bg-dark {
+  background-color: #000000;
+  color: #fff;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+hr.divider {
+  border: none;
+  padding: .25rem;
+  background-color: #222;
+}
+
+.input-button-wrap .btn-text {
+  font-size: 26px;
+  color: #fff;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
+.navbar  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -4px ;
+  margin-left: 40px;
+  margin-right: 56px;
+  padding-top: 2px;
+  position: relative;
+}
+
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #e50914;
+  padding: 6px 17px;
+  border-radius: 4px;
+}
+
+.nav-logo {
+  width: 170px;
+  height: 95px;
+}
+
+/* Showcase */
+.showcase {
+  
+  height: 120vh;
+  color: #fff;
+  position: relative;
+  background-color: black;  
+}
+
+.showcase::before {
+  content: '';
+  background: url('./img/netflix-background.jpg')no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* background-color: black; */
+  opacity: 0.3;
+}
+
+.showcase .showcase-content {
+  /* width: 100%; */
+  height: 100%;
+  padding-top: 120px;
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  position: relative;
+}
+
+.showcase .showcase-content .input-button-wrap  {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase .showcase-content .input-button-wrap #emailbox {
+  width: 450px;
+  height: 60px;
+  padding: 10px 10px 0;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.showcase .showcase-content .input-button-wrap button {
+  width: 214.06px;
+  height: 60px;
+  background-color: #e50914;
+  border: none;
+  padding: 0 26px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+header {
+  border-bottom: 8px solid #222;
+}
+
+/* Sections  */
+.section-body {
+  background-color: #000000;
+  color: #fff;
+  padding: 50px 5%;
+  border-bottom: 8px solid #222;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.main-container {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-container {
+  width: 52%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding-bottom: 3rem;
+  flex: 0 1 auto;
+  margin: -5% 0;
+}
+
+.text-container h2 {
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+
+
+
+.image-container {
+  width: 48%;
+  height: 100%;
+  display: flex;
+}
+
+
+/* Image on Video Container */
+.image-video-container {
+  margin: -0.1rem -0.05rem -0.05rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Tv Image Backdrop smaller */
+
+.image-video-container img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* video used on TV image (ENJOY ON TV SECTIONS) */
+
+.animation-container {
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* WATCH ON MOBILE */
+
+/* Watch on Mobile Image */
+#mobileImage {
+  width: 90%;
+  height: 100%;
+  margin-left: -50px;
+
+}
+
+/* Watch Everwhere */
+
+.device-pile-animation-container{
+  width: 100%;
+  height: 100%;
+  max-width: 63%;
+  max-height: 47%;
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* FAQs Section */
+
+#FAQs {
+  border-bottom: 8px solid #222;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  
+}
+
+#FAQs h2 {
+  text-align: center; 
+  font-size: 50px; 
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* FAQs Accordion */
+.accordion {
+  background-color: #303030;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 30px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 26px;
+  transition: 0.4s;
+  margin-bottom: 10px;
+}
+
+.active {
+  background-color: #303030; 
+}
+
+.panel {
+  padding: 30px;
+  display: none;
+  background-color: #303030;
+  color: #fff;
+  overflow: hidden;
+  font-size: 26px;
+  margin-bottom: 10px;
+  margin-top: -8px;
+}
+
+.accordion:after {
+  content: '\0271A'; /* Unicode character for "plus" sign (+) */
+  font-size: 26px;
+  color: #fff;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\02716"; /* Unicode character for "multiply" sign (x) */
+  font-size: 26px;
+}
+
+.faq-button {
+  width: 214.06px;
+  height: 60px;
+  background-color: #e50914;
+  border: none;
+  padding: 0 26px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+#faq-emailbox {
+  width: 450px;
+  height: 60px;
+  padding: 10px 10px 0;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.input-button-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.questions {
+  margin-bottom: 50px;
+}
